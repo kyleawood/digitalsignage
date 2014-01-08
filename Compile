@@ -1,0 +1,12 @@
+#!/bin/bash
+cd /home/*/Digital\ Signage/
+if [ ! -d ./bin ]; 
+	then
+		mkdir bin
+		mkdir bin/DS
+	else
+		rm ./bin/DS/*/*.class
+fi
+
+javac -cp .:bin/:lib/hsqldb.jar:lib/jna.jar:lib/swt.jar:lib/vlcj-1.2.0.jar: -d bin/ src/DS/*/*.java
+#rm -r ./src

@@ -1,0 +1,3 @@
+# A personal Memory-Only database.
+urlid Resturant
+url jdbc:hsqldb:Resturant

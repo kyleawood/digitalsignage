@@ -1,0 +1,5 @@
+#!/bin/bash
+sleep 10
+cd /home/signage/Digital\ Signage/
+unclutter -idle 0 &
+java -cp .:bin/:lib/hsqldb.jar:lib/jna.jar:lib/swt.jar:lib/vlcj-1.2.0.jar: DS.application.DigitalSignage play
